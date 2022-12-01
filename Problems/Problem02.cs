@@ -1,13 +1,11 @@
-using System.Diagnostics;
+using ProjectEuler.Helpers;
 
-namespace ProkectEuler.Problems;
+namespace ProjectEuler.Problems;
 
-internal static class Problem02
+public class Problem02 : ISolver
 {
-    internal static void Solve()
+    public object Solve()
     {
-        var sw = Stopwatch.StartNew();
-
         var max = 4000000;
         var current = 2;
         var sum = 0;
@@ -19,9 +17,6 @@ internal static class Problem02
             current = (int)Math.Round(current * phi, MidpointRounding.AwayFromZero);
         }
 
-        sw.Stop();
-
-        Console.WriteLine($"Result: {sum}");
-        Console.WriteLine($"Time: {sw.ElapsedMilliseconds} ms");
+        return sum;
     }
 }
