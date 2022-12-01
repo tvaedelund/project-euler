@@ -2,7 +2,7 @@
 using System.Reflection;
 using ProjectEuler.Helpers;
 
-var problemNum = "Problem02";
+var problemNum = "Problem03";
 
 Console.WriteLine($"Project Euler: {problemNum}");
 
